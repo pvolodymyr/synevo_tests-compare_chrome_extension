@@ -1,3 +1,42 @@
 .crx-class {
   color: pink;
 }
+
+tr.search__item.service.group_6:hover {
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid blue;
+    pointer-events: none;
+  }
+
+  .remove-button {
+    background-color: #c1c8ee;
+    border-color: blue;
+  }
+}
+
+.remove-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 5px 8px;
+  border: 2px solid green;
+  background-color: #b6dec4;
+}
+
+.row-selected {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid green;
+    pointer-events: none;
+  }
+}
